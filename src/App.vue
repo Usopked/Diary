@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-link to="/helloworld" class="router-link-button">HelloWorld</router-link>
+    <router-link to="/aboutpage" class="router-link-button">About</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
@@ -24,4 +22,18 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.router-link-button {
+  margin-right: 10px; /* 마지막 요소에는 제거 필요 */
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .router-link-button:last-child {
+  margin-right: 0;
+} */
 </style>
