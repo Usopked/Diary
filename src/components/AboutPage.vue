@@ -12,8 +12,18 @@
       class="flex flex-col justify-center self-end mt-2.5 max-w-full text-sm text-center whitespace-nowrap text-zinc-600 w-[107px]"
     >
       <div class="flex flex-col justify-center">
-        <button class="justify-center px-9 py-4 rounded-2xl bg-slate-300" style="padding: 10px 20px; width: 100px; height: 50px;">POST!</button>
+        <button style="padding: 10px 20px; width: 100px; height: 50px;" @click="navigate('/helloworld')">POST!</button>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    navigate(path) {
+      this.$router.push(path); 
+    },
+  },
+};
+</script>
