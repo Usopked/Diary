@@ -2,6 +2,7 @@
   <div id="app">
     <router-link to="/helloworld" class="router-link-button">HelloWorld</router-link>
     <router-link to="/aboutpage" class="router-link-button">About</router-link>
+    <router-link to="/thirdpage" class="router-link-button">Third</router-link>
     <router-view></router-view>
   </div>
 </template>

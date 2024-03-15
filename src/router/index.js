@@ -3,6 +3,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/HelloWorld.vue'
 import AboutPage from '../components/AboutPage.vue'
+import ThirdPage from '../components/ThirdPage.vue'
 
 const routes = [
   {
@@ -14,6 +15,11 @@ const routes = [
     path: '/aboutpage',
     name: 'AboutPage',
     component: AboutPage,
+  },
+  {
+    path: '/thirdpage',
+    name: 'ThirdPage',
+    component: ThirdPage,
   },
   // 추가 페이지 라우트는 여기에 정의
   
